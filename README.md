@@ -26,6 +26,11 @@ Since the first (LSB) flip-flop needs to toggle at every clock pulse, its J and 
 The next flip-flop need only “recognize” that the first flip-flop’s Q output is high to be made ready to toggle, so no AND gate is needed.
 However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates.
 
+**TRUTH TABLE**
+
+![WhatsApp Image 2024-12-20 at 13 54 26_0dd733f0](https://github.com/user-attachments/assets/26e3c41a-8bc1-4d55-aac1-d80261be8281)
+
+
 **Procedure**
 
 1.Type the program in Quartus software.
@@ -65,50 +70,20 @@ end
 
 endmodule
 
-DOWN COUNTER
-
-module ex12(out,clk,rst);
-
-input clk,rst;
-
-output reg [3:0]out;
-
-always @ (posedge clk)
-
-begin
-
-   if(rst)
-   
-     out<=0;
-   
-   else 
-   
-     out <= out-1;
-
-end
-
-endmodule
-
-
 
 Developed by: Kaviya.V.M
 
 RegisterNumber:24900714
 
 
-**RTL LOGIC UP COUNTER**
+**RTL DIAGRAM**
 
 ![WhatsApp Image 2024-12-23 at 14 18 03_ca3dd4d0](https://github.com/user-attachments/assets/940602ed-6d95-492a-86db-69a747f76803)
 
 
-**TIMING DIAGRAM FOR IP COUNTER**
+**TIMING DIAGRAM **
 
 ![WhatsApp Image 2024-12-23 at 14 18 03_5f08a1c8](https://github.com/user-attachments/assets/e92c29bc-d67c-4571-a5db-0206fc5944d5)
-
-
-**TRUTH TABLE**
-
-![WhatsApp Image 2024-12-20 at 13 54 26_0dd733f0](https://github.com/user-attachments/assets/26e3c41a-8bc1-4d55-aac1-d80261be8281)
 
 
 **RESULTS**
